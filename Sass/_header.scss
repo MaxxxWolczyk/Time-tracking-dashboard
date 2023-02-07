@@ -6,6 +6,10 @@
     border-radius: 1.5rem;
     overflow: hidden;
 
+    @include respond(desktop) {
+        height: 100%;
+    }
+
 
     &__bio {
         display: flex;
@@ -16,10 +20,24 @@
         border-radius: 1.5rem;
         z-index: 1;
 
+        @include respond(desktop) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 5rem;
+            height: 70%;
+        }
+
         &-img {
             width: 25%;
+            max-width: 15rem;
             border: 2px solid white;
             border-radius: 50%;
+
+            @include respond(desktop) {
+                width: 30%;
+                margin-bottom: 1.5rem;
+            }
+
         }
     }
 
@@ -29,27 +47,53 @@
         justify-content: space-around;
         align-items: center;
         background-color: $neutral-db;
-        padding: 5rem 1rem 2rem 1rem;
+        padding: 6rem 1rem 3rem 1rem;
         transform: translateY(-3rem);
         border-radius: 1.5rem;
+
+        @include respond(desktop) {
+            align-items: start;
+            padding-left: 5rem;
+            flex-direction: column;
+            height: calc(30% + 3rem);
+            // padding: 9rem 1rem 7rem 1rem;
+        }
     }
 
     &__time-stamp {
         font-size: 1.3rem;
+
+        @include respond(desktop) {
+            font-size: 1.8rem;
+            // line-height: 2rem;
+        }
     }
 }
 
 .text-box {
     width: 65%;
 
+    @include respond(desktop) {
+        width: 100%;
+    }
+
     &__report {
         color: $neutral-pb;
         line-height: 2rem;
+
+        @include respond(desktop) {
+            font-size: 2rem;
+            margin-bottom: .7rem;
+        }
     }
 
     &__name {
         font-size: 2rem;
         font-weight: $font-light;
+
+        @include respond(desktop) {
+            font-size: 5rem;
+        }
 
     }
 }

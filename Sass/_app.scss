@@ -10,7 +10,44 @@
     width: 90%;
 
 
+
     &>* {
         width: 100%;
     }
+
+    &__header {
+        @include respond(desktop) {
+            flex-basis: 30%;
+            padding: 0;
+        }
+
+    }
+
+
+
+
+    &__main-content {
+        display: flex;
+        flex-direction: column;
+
+        @include respond(desktop) {
+            // height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 70%;
+            justify-content: space-around;
+            // flex-shrink: 1;
+            // align-content: flex-end;
+        }
+    }
+
+    @include respond(desktop) {
+        height: 66.5vh;
+        width: 65%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        gap: 2rem;
+    }
+
 }

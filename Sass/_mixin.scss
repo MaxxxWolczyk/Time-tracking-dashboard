@@ -5,14 +5,14 @@
 
 
 @mixin respond($size) {
-    @if $size =='mobile' {
+    @if $size ==mobile {
         @media (max-width: 375px) {
             @content;
         }
     }
 
-    @if $size =='desktop' {
-        @media (max-width: 1440px) {
+    @if $size ==desktop {
+        @media (min-width: 1440px) {
             @content;
         }
     }

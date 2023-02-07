@@ -1,0 +1,102 @@
+.card {
+    @include respond(desktop) {
+        height: 50%;
+        width: 32%;
+    }
+
+
+    &__bg {
+
+        background-color: $color-work;
+        overflow: hidden;
+        position: relative;
+        height: 6rem;
+        border-radius: 1.5rem;
+        padding-bottom: 6rem;
+
+        @include respond(desktop) {
+            height: 8rem;
+        }
+
+        &-img {
+            position: absolute;
+            top: -20%;
+            right: 5%;
+        }
+    }
+
+    &[data-type="play"] &__bg {
+        background-color: $color-play;
+    }
+
+    &[data-type="study"] &__bg {
+        background-color: $color-study;
+    }
+
+    &[data-type="exercise"] &__bg {
+        background-color: $color-exercise;
+    }
+
+    &[data-type="social"] &__bg {
+        background-color: $color-social;
+    }
+
+    &[data-type="self-care"] &__bg {
+        background-color: $color-selfCare;
+    }
+
+    &__content {
+        padding: 2.5rem 1rem;
+        // height: 5rem;
+        background-color: $neutral-db;
+        border-radius: 1.5rem;
+        transform: translateY(-3rem);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &>* {
+            flex-basis: 45%;
+        }
+    }
+
+    &__title {
+        margin-bottom: .5rem;
+        font-size: 1.4rem;
+    }
+
+    &__icon {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        font-size: 1.4rem;
+    }
+
+    &__time {
+        font-size: 2.5rem;
+        font-weight: $font-light;
+
+        @include respond(desktop) {
+            display: block;
+            flex-basis: 100%;
+            margin-top: 1.5rem;
+            font-size: 6rem;
+        }
+    }
+
+    &__last-act {
+        text-align: right;
+        font-size: 1.1rem;
+
+        @include respond(desktop) {
+            text-align: left;
+            display: block;
+            flex-basis: 100%;
+            padding-top: .5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
