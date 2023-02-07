@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+
+    &__bio {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $color-primary;
+        padding: 3rem 1rem;
+        border-radius: 1.5rem;
+        z-index: 1;
+
+        &-img {
+            width: 25%;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+    }
+
+
+    &__time-stamps {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $neutral-db;
+        padding: 5rem 1rem 2rem 1rem;
+        transform: translateY(-3rem);
+        border-radius: 1.5rem;
+    }
+
+    &__time-stamp {
+        font-size: 1.3rem;
+    }
+}
+
+.text-box {
+    width: 65%;
+
+    &__report {
+        color: $neutral-pb;
+        line-height: 2rem;
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-weight: $font-light;
+
+    }
+}
