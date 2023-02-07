@@ -1,0 +1,39 @@
+//Primary colors
+
+// - Blue: hsl(246, 80%, 60%)
+$color-primary: hsl(246, 80%, 60%);
+
+// - Light red (work): hsl(15, 100%, 70%)
+$color-work: hsl(15, 100%, 70%);
+
+// - Soft blue (play): hsl(195, 74%, 62%)
+$color-play: hsl(195, 74%, 62%);
+
+// - Light red (study): hsl(348, 100%, 68%)
+$color-study: hsl(348, 100%, 68%);
+
+// - Lime green (exercise): hsl(145, 58%, 55%)
+$color-exercise: hsl(145, 58%, 55%);
+
+// - Violet (social): hsl(264, 64%, 52%)
+$color-social: hsl(264, 64%, 52%);
+
+// - Soft orange (self care): hsl(43, 84%, 65%)
+$color-selfCare: hsl(43, 84%, 65%);
+
+//Neutral colors
+
+// - Very dark blue: hsl(226, 43%, 10%)
+$neutral-vdb: hsl(226, 43%, 10%);
+// - Dark blue: hsl(235, 46%, 20%)
+$neutral-db: hsl(235, 46%, 20%);
+// - Desaturated blue: hsl(235, 45%, 61%)
+$neutral-dsb: hsl(235, 45%, 61%);
+// - Pale Blue: hsl(236, 100%, 87%)
+$neutral-pb: hsl(236, 100%, 87%);
+
+//Font weight
+
+$font-light: 300;
+$font-medium: 400;
+$font-bold: 500;
