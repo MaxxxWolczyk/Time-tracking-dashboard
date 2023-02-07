@@ -1,0 +1,14 @@
+{
+  "name": "time-tracking-dashboard",
+  "version": "1.0.0",
+  "description": "time tracking aplication",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass main.scss css/style.css -w"
+  },
+  "author": "Max Wołczyk",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}
