@@ -62,6 +62,13 @@
 
     &__time-stamp {
         font-size: 1.3rem;
+        color: $neutral-pb;
+        cursor: pointer;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-white;
+        }
 
         @include respond(desktop) {
             font-size: 1.8rem;

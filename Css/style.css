@@ -122,6 +122,12 @@ body {
 }
 .header__time-stamp {
   font-size: 1.3rem;
+  color: hsl(236deg, 100%, 87%);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header__time-stamp:hover {
+  color: #fff;
 }
 @media (min-width: 1440px) {
   .header__time-stamp {
@@ -204,6 +210,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.card__content:hover {
+  background-color: #292f70;
 }
 .card__content > * {
   flex-basis: 45%;
