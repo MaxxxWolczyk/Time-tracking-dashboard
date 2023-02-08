@@ -1,6 +1,6 @@
 .card {
     @include respond(desktop) {
-        height: 50%;
+        // height: 50%;
         width: 32%;
     }
 
@@ -15,7 +15,7 @@
         padding-bottom: 6rem;
 
         @include respond(desktop) {
-            height: 8rem;
+            height: 6rem;
         }
 
         &-img {
