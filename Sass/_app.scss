@@ -31,17 +31,14 @@
         flex-direction: column;
 
         @include respond(desktop) {
-            height: 70vh;
             flex-direction: row;
             flex-wrap: wrap;
             flex-basis: 70%;
             justify-content: space-around;
-            align-items: center;
         }
     }
 
     @include respond(desktop) {
-        height: 70vh;
         width: 65%;
         top: 50%;
         transform: translate(-50%, -50%);
